@@ -1,5 +1,5 @@
 CREATE DATABASE umg4;
-Use ung4;
+Use umg4;
 CREATE TABLE alumnos
 (
 carnet_Alumno varchar(15) PRIMARY KEY,
@@ -78,9 +78,30 @@ Estatus_aulas varchar (1),
 foreign key (codigo_aulas) references alumnos (carnet_Alumno)
 
 )Engine = InnoDB ;
+CREATE TABLE asignacionalumnos
+(
+codico_carrera varchar(15) PRIMARY KEY,
+condigo_sede Varchar (45) ,
+codigo_jornada  VARCHAR (45) ,
+codigo_seccion Varchar (45),
+codigo_aula varchar (20),
+carnet_curso varchar (19),
+carnet_alumno varchar (19),
+nota_asignacionalumon float (10,2)
+)Engine = InnoDB ;
 
 
-
+CREATE TABLE asignacionamaestros
+(
+codico_carrera varchar(15) PRIMARY KEY,
+condigo_sede Varchar (45) ,
+codigo_jornada  VARCHAR (45) ,
+codigo_seccion Varchar (45),
+codigo_aula varchar (20),
+codigo_curso varchar (19),
+cogigo_maestrolumno varchar (19),
+nota_asignacionalumon float (10,2)
+)Engine = InnoDB ;
 
 
 
