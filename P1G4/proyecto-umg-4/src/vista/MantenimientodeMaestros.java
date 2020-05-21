@@ -1,9 +1,10 @@
-package vista;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -47,6 +48,8 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
         jLabel5 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
+
+        setVisible(true);
 
         jButton1.setText("BUSCAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -142,7 +145,7 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
@@ -158,11 +161,11 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
             ResultSet rs = pst.executeQuery();
             
             if(rs.next()){
-                jLabel2.setText(rs.getString("nombre_maestro"));
-                jLabel3.setText(rs.getString("direccion_maestro"));
-                jLabel4.setText(rs.getString("telefono_maestro"));
-                jLabel5.setText(rs.getString("email_maestro"));
-                jLabel6.setText(rs.getString("estatus_maestro"));
+                jTextField2.setText(rs.getString("nombre_maestro"));
+                jTextField3.setText(rs.getString("direccion_maestro"));
+                jTextField4.setText(rs.getString("telefono_maestro"));
+                jTextField5.setText(rs.getString("email_maestro"));
+                jTextField6.setText(rs.getString("estatus_maestro"));
             } else {
                 JOptionPane.showMessageDialog(null, "Cliente no registrado.");
             jTextField1.setText("");
@@ -212,9 +215,9 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
             pst.setString(1, jTextField1.getText().trim());
             pst.setString(2, jTextField2.getText().trim());
             pst.setString(3, jTextField3.getText().trim());
-             pst.setString(1, jTextField4.getText().trim());
-            pst.setString(2, jTextField5.getText().trim());
-            pst.setString(3, jTextField6.getText().trim());
+             pst.setString(4, jTextField4.getText().trim());
+            pst.setString(5, jTextField5.getText().trim());
+            pst.setString(6, jTextField6.getText().trim());
             pst.executeUpdate();
             
             jTextField1.setText("");
