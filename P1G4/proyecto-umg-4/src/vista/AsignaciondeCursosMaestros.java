@@ -2,7 +2,7 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-
+/*CODIGO ECHO POR HERBERT LEONEL DOMINGUEZ CHAVEZ  9959-19-5644*/
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +11,7 @@ import java.sql.PreparedStatement;
 
 /**
  *
- * @author leone
+ * @author leonel
  */
 public class AsignaciondeCursosMaestros extends javax.swing.JInternalFrame {
 
