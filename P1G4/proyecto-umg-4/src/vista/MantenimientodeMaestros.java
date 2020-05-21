@@ -1,3 +1,4 @@
+package vista;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -49,8 +50,10 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
         jTextField6 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 204, 153));
         setVisible(true);
 
+        jButton1.setBackground(new java.awt.Color(153, 204, 255));
         jButton1.setText("BUSCAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,6 +61,7 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(153, 204, 255));
         jButton2.setText(" MODIFICAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,6 +69,7 @@ public class MantenimientodeMaestros extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(153, 204, 255));
         jButton3.setText("REGISTRAR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

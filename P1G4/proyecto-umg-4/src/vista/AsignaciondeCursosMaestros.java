@@ -1,8 +1,9 @@
+package vista;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-/*CODIGO ECHO POR HERBERT LEONEL DOMINGUEZ CHAVEZ  9959-19-5644*/
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +12,7 @@ import java.sql.PreparedStatement;
 
 /**
  *
- * @author leonel
+ * @author leone
  */
 public class AsignaciondeCursosMaestros extends javax.swing.JInternalFrame {
 
@@ -47,8 +48,10 @@ public class AsignaciondeCursosMaestros extends javax.swing.JInternalFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 204, 153));
         setVisible(true);
 
+        jButton2.setBackground(new java.awt.Color(153, 153, 255));
         jButton2.setText("REGISTRAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +132,7 @@ public class AsignaciondeCursosMaestros extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
