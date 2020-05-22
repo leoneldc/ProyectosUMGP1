@@ -90,7 +90,7 @@ nota_asignacionalumon float (10,2)
 )Engine = InnoDB ;
 
 
-CREATE TABLE asignacionamaestros
+CREATE TABLE asignacioncursosmaestros
 (
 codigo_carrera varchar(5) PRIMARY KEY,
 codigo_sede varchar(5) ,
